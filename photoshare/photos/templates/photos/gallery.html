@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.css">
+    <title>Gallery</title>
+
+    <!-- CSS only -->
+
+    <style>
+        .img-thumbnail{
+            height:200px;
+            /* width:200px; */
+        }
+
+
+    </style>
+
+
+</head>
+<body class="m-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Categories
+                </div>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">All</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+
+                  <li class="list-group-item">
+                      <a href="{% url 'add' %}" class="btn btn-dark btn-sm m-1">Add Photo</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-9">
+
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="img-thumbnail" src="https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="Card image cap">
+                        <div class="card-body">
+                          <small>Category : Pets</small>
+                        </div>
+                        <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photos' 5 %}"  >View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="img-thumbnail" src="https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="Card image cap">
+                        <div class="card-body">
+                          <small>Category : Pets</small>
+                        </div>
+                        <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photos' 5 %}"  >View</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="img-thumbnail" src="https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="Card image cap">
+                        <div class="card-body">
+                          <small>Category : Pets</small>
+                        </div>
+                        <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photos' 5 %}"  >View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="img-thumbnail" src="https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="Card image cap">
+                        <div class="card-body">
+                          <small>Category : Pets</small>
+                        </div>
+                        <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photos' 5 %}"  >View</a>
+                    </div>
+                </div>
+
+                
+
+
+
+            </div>
+
+
+          </div>
+
+       
+
+
+        </div>
+      </div>
+</body>
+</html>
