@@ -17,9 +17,9 @@
                     <a href="{% url 'gallery' %}" class="btn btn-dark my-3">Go Back</a>
 
                     <div class="" style="height:90vh;">
-                        <img style="max-width:100%; max-height:100%;" src="https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="">
+                        <img style="max-width:100%; max-height:100%;" src="{{ photo.image.url }}" alt="">
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit obcaecati labore veniam, fuga beatae, facilis eveniet voluptates repellat recusandae optio error officiis laborum quae quisquam incidunt quasi omnis. Hic.</p>
+                        <p>{{ photo.description }}</p>
                     </div>
 
 
